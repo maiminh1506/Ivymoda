@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/giao_dien/style/styles.css">
+    <link rel="stylesheet" href="/giao_dien/font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <title>Ivy Project</title>
+</head>
+<body>
+
+    <!------ Header ------>
+    <header>
+        <div class="logo">
+            <img src="/giao_dien/img/logo.png" alt="#">
+        </div>
+
+        <div class="menu">
+            <li><a href="">NỮ</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo khoắc</a></li>
+                            <li><a href="">Áo len</a></li>
+                            <li><a href="">Áo dài</a></li>
+                        </ul>   
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần jean</a></li>
+                            <li><a href="">Quần dài</a></li>
+                            <li><a href="">Quần lửng</a></li>
+                        </ul>   
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">NAM</a></li>
+            <li><a href="">TRẺ EM</a></li>
+            <li><a href="">SALE</a></li>
+            <li><a href="">KHẨU TRANG</a></li>
+            <li><a href="">BST</a></li>
+            <li><a href="">THÔNG TIN</a></li>
+        </div>
+        <div class="orthers">
+            <li><input type="text" placeholder="Tìm kiếm" name="" id=""><i class="fas fa-search"></i></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa-solid fa-cart-shopping"></a></li>
+        </div>
+    </header>
+
+    <!------ Slider ------>
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="/giao_dien/img/slide1.jpg">
+            <img src="/giao_dien/img/slide2.jpg">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <!------ app-container ------>
+    <section class="app-container">
+        <p>Tải ứng dụng IVY moda</p>
+        <div class="app-google">
+            <img src="/giao_dien/img/appstore1.png">
+            <img src="/giao_dien/img/appstore1.png">
+        </div>
+        <p>Nhận bản tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn.....">
+    </section>
+
+    <!------ footer ------>
+    <div class="footer-top">
+        <li><a href=""><img src="/giao_dien/img/dathongbao.png" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a href="" class="fa-brands fa-facebook-f"></a>
+            <a href="" class="fa-brands fa-twitter"></a>
+            <a href="" class="fa-brands fa-youtube"></a>
+        </li>
+    </div>
+    
+    <div class="footer-center">
+        <p>
+            Công ty Cổ Phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
+            Địa chỉ: 123 Lê Quang Định, Quận 1, TP. Hồ Chí Minh <br>
+            Địa chỉ đặt hàng: <b>0246 662 3434</b> .
+        </p>
+    </div>
+
+    <div class="footer-bottom">
+        @Ivymoda All rights reserved
+    </div>
+
+</body>
+
+<script src="/giao_dien/js/script.js" defer></script>
+<script src="/giao_dien/js/slider.js" defer></script>
+<!-- <script>
+    //header
+    const header = document.querySelector("header")
+    window.addEventListener("scroll", function(){
+        x = window.pageYOffset
+        if(x > 0) {
+            header.classList.add("sticky")
+        }
+        else {
+            header.classList.remove("sticky")
+        }
+    })
+
+    //slider
+    const imgPosition = document.querySelectorAll(" .aspect-ratio-169 img")
+    const imgContainer = document.querySelector(' .aspect-ratio-169')
+    const dotItem = document.querySelectorAll('.dot')
+    let imgNuber = imgPosition.length
+    let index = 0
+    //console.log(imgPosition)
+    imgPosition.forEach(function(image,index) {
+        image.style.left = index*100 + "%"
+        dotItem[index].addEventListener("click",function() {
+            slider (index)
+        })
+    })
+
+    function imgSlide () {
+        index++;
+        console.log(index)
+        if(index >= imgNuber) {index=0}
+        slider (index)
+    }
+
+    function slider (index) {
+        imgContainer.style.left = "-" + index*100 + "%"
+        const dotActive = document.querySelectorAll('.active')
+        dotActive.forEach(function(dot) {
+            dot.classList.remove("active")
+        })
+        dotItem[index].classList.add("active")
+    }
+
+    setInterval(imgSlide, 5000)
+
+</script> -->
+</html>
